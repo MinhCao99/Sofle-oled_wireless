@@ -31,7 +31,7 @@
         changelang: changelang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp SPACE>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp PLUS>;
             label = "CHANGELANG";
         };
     };
@@ -58,7 +58,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_AL_COFFEE LC(SPACE)>,
+                <&inc_dec_kp LC(LS(KP_PLUS)) LC(SPACE)>,
                 <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
         };
 
